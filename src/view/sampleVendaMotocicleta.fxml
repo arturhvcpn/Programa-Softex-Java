@@ -10,84 +10,84 @@
             <children>
                 <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #222;">
                     <children>
-                        <VBox layoutY="186.0" prefHeight="415.0" prefWidth="250.0">
-                            <children>
-                                <Button id="telaSimulacaoButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #aaa; -fx-background-radius: 30 0 0 30;" text="Simulação de Venda" textFill="WHITE">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font></Button>
-                                <Button id="telaCadastroMotocicletaButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #aaa; -fx-background-radius: 30 0 0 30; -fx-translate-y: 20;" text="Cadastro de Motocicleta" textFill="WHITE">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font></Button>
-                                <Button id="telaCadastroVendaButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #aaa; -fx-background-radius: 30 0 0 30; -fx-translate-y: 40;" text="Venda de Motocicleta" textFill="WHITE">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font></Button>
-                                <Button id="telaConsultaVendasButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #aaa; -fx-background-radius: 30 0 0 30; -fx-translate-y: 60;" text="Consulta de Vendas" textFill="WHITE">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font></Button>
-                                <Button id="telaRelatorioLucrosButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #aaa; -fx-background-radius: 30 0 0 30; -fx-translate-y: 80;" text="Relatório de Lucros" textFill="WHITE">
-                                    <font>
-                                        <Font size="18.0" />
-                                    </font></Button>
-                            </children>
-                        </VBox>
+                        <VBox layoutY="186.0" prefHeight="415.0" prefWidth="250.0" />
+                        <Label fx:id="labelCodigoMotocicleta" layoutX="80.0" layoutY="236.0" text="Código:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldCodigoMotocicleta" layoutX="140.0" layoutY="230.0" prefHeight="30.0" prefWidth="100.0" promptText="1" />
 
+                        <Label fx:id="labelRenavamMotocicleta" layoutX="55.0" layoutY="280.0" text="Renavam:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldRenavamMotocicleta" layoutX="130.0" layoutY="275.0" prefHeight="30.0" prefWidth="110.0" promptText="00000000000" />
+                        <Label fx:id="labelChassiMotocicleta" layoutX="15.0" layoutY="325.0" text="Chassi:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldChassiMotocicleta" layoutX="70.0" layoutY="320.0" prefHeight="30.0" prefWidth="170.0" promptText="9BWSU19F08B302158" />
+
+                        <Label fx:id="labelModeloMotocicleta" layoutX="60.0" layoutY="365.0" text="Modelo:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldModeloMotocicleta" layoutX="120.0" layoutY="360.0" prefHeight="30.0" prefWidth="120.0" promptText="CG 160 Titan" />
+
+                        <Label fx:id="labelPlacaMotocicleta" layoutX="90.0" layoutY="405.0" text="Placa:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldPlacaMotocicleta" layoutX="140.0" layoutY="400.0" prefHeight="30.0" prefWidth="100.0" promptText="QWE-1234" />
+                        <Label fx:id="labelCorMotocicleta" layoutX="100.0" layoutY="445.0" text="Cor:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldCorMotocicleta" layoutX="140.0" layoutY="440.0" prefHeight="30.0" prefWidth="100.0" promptText="PRETA" />
+                        <Label fx:id="labelAnoMotocicleta" layoutX="100.0" layoutY="485.0" text="Ano:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldAnoMotocicleta" layoutX="140.0" layoutY="480.0" prefHeight="30.0" prefWidth="100.0" promptText="2020" />
+                        <Label fx:id="labelValorMotocicleta" layoutX="10.0" layoutY="525.0" text="Valor de Compra:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldValorMotocicleta" layoutX="140.0" layoutY="520.0" prefHeight="30.0" prefWidth="100.0" promptText="13.500,00" />
+                        <Label fx:id="labelValorVenda" layoutX="20.0" layoutY="565.0" text="Valor de Venda:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textFieldValorVenda" layoutX="140.0" layoutY="560.0" prefHeight="30.0" prefWidth="100.0" promptText="13.500,00" />
                     </children></AnchorPane>
-                <Label fx:id="labelCodigoMotocicleta" layoutX="270.0" layoutY="50.0" text="Código Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldCodigoMotocicleta" layoutX="410.0" layoutY="45.0" prefHeight="30.0" prefWidth="100.0" promptText="1" />
 
-                <Label fx:id="labelRenavamMotocicleta" layoutX="270.0" layoutY="97.0" text="Renavam Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldRenavamMotocicleta" layoutX="430.0" layoutY="90.0" prefHeight="30.0" prefWidth="116.0" promptText="00000000000" />
-                <Label fx:id="labelChassiMotocicleta" layoutX="272.0" layoutY="142.0" text="Chassi Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldChassiMotocicleta" layoutX="411.0" layoutY="135.0" prefHeight="30.0" prefWidth="174.0" promptText="9BWSU19F08B302158" />
 
-                <Label fx:id="labelModeloMotocicleta" layoutX="274.0" layoutY="185.0" text="Modelo Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldModeloMotocicleta" layoutX="417.0" layoutY="178.0" prefHeight="30.0" prefWidth="168.0" promptText="CG 160 Titan" />
+                <Button fx:id="insertButton" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Inserir" textFill="WHITE" />
+                <Button fx:id="updateButton" layoutX="420.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Atualizar" textFill="WHITE" />
+                <Button fx:id="deleteButton" layoutX="560.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Excluir" textFill="WHITE" />
+            <TableView fx:id="TableView" layoutX="250.0" layoutY="6.0" prefHeight="533.0" prefWidth="547.0">
+              <columns>
+                <TableColumn fx:id="codigoColumn"  prefWidth="75.0" text="Código"/>
+                  <TableColumn fx:id="renavamColumn" prefWidth="75.0" text="Renavam"/>
+                  <TableColumn fx:id="chassiColumn" prefWidth="75.0" text="Chassi"/>
+                  <TableColumn fx:id="modeloColumn" prefWidth="75.0" text="Modelo"/>
+                  <TableColumn fx:id="placaColumn" prefWidth="75.0" text="Placa"/>
+                  <TableColumn fx:id="corColumn" prefWidth="75.0" text="Cor"/>
+                  <TableColumn fx:id="anoColumn" prefWidth="75.0" text="Ano"/>
+                  <TableColumn fx:id="valorVendaColumn" prefWidth="75.0" text="Valor de Venda"/>
+                  <TableColumn fx:id="valorCompraColumn" prefWidth="75.0" text="Valor de Compra"/>
+              </columns>
+            </TableView>
 
-                <Label fx:id="labelPlacaMotocicleta" layoutX="275.0" layoutY="227.0" text="Placa Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldPlacaMotocicleta" layoutX="418.0" layoutY="220.0" prefHeight="30.0" prefWidth="168.0" promptText="QWE-1234" />
-                <Label fx:id="labelCorMotocicleta" layoutX="273.0" layoutY="265.0" text="Cor Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldCorMotocicleta" layoutX="412.0" layoutY="258.0" prefHeight="30.0" prefWidth="174.0" promptText="PRETA" />
-                <Label fx:id="labelAnoMotocicleta" layoutX="275.0" layoutY="308.0" text="Ano Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldAnoMotocicleta" layoutX="418.0" layoutY="301.0" prefHeight="30.0" prefWidth="168.0" promptText="2020" />
-                <Label fx:id="labelValorMotocicleta" layoutX="276.0" layoutY="350.0" text="Valor Motocicleta:" textFill="WHITE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="textFieldValorMotocicleta" layoutX="419.0" layoutY="343.0" prefHeight="30.0" prefWidth="168.0" promptText="13.500,00" />
-                <Button layoutX="452.0" layoutY="546.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Cadastrar" textFill="WHITE" />
             </children>
         </AnchorPane>
     </children>
