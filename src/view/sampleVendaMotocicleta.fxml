@@ -6,18 +6,18 @@
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
     <children>
-        <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgba(0,0,0,0.8);">
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgba(0,0,0,0.8);">
             <children>
                 <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #222;">
                     <children>
                         <VBox layoutY="186.0" prefHeight="415.0" prefWidth="250.0" />
+
                         <Label fx:id="labelCodigoMotocicleta" layoutX="80.0" layoutY="236.0" text="Código:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Label>
                         <TextField fx:id="textFieldCodigoMotocicleta" layoutX="140.0" layoutY="230.0" prefHeight="30.0" prefWidth="100.0" promptText="1" />
-
                         <Label fx:id="labelRenavamMotocicleta" layoutX="55.0" layoutY="280.0" text="Renavam:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
@@ -30,14 +30,12 @@
                             </font>
                         </Label>
                         <TextField fx:id="textFieldChassiMotocicleta" layoutX="70.0" layoutY="320.0" prefHeight="30.0" prefWidth="170.0" promptText="9BWSU19F08B302158" />
-
                         <Label fx:id="labelModeloMotocicleta" layoutX="60.0" layoutY="365.0" text="Modelo:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Label>
                         <TextField fx:id="textFieldModeloMotocicleta" layoutX="120.0" layoutY="360.0" prefHeight="30.0" prefWidth="120.0" promptText="CG 160 Titan" />
-
                         <Label fx:id="labelPlacaMotocicleta" layoutX="90.0" layoutY="405.0" text="Placa:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
@@ -56,12 +54,12 @@
                             </font>
                         </Label>
                         <TextField fx:id="textFieldAnoMotocicleta" layoutX="140.0" layoutY="480.0" prefHeight="30.0" prefWidth="100.0" promptText="2020" />
-                        <Label fx:id="labelValorMotocicleta" layoutX="10.0" layoutY="525.0" text="Valor de Compra:" textFill="WHITE">
+                        <Label fx:id="labelValorCompra" layoutX="10.0" layoutY="525.0" text="Valor de Compra:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="textFieldValorMotocicleta" layoutX="140.0" layoutY="520.0" prefHeight="30.0" prefWidth="100.0" promptText="13.500,00" />
+                        <TextField fx:id="textFieldValorCompra" layoutX="140.0" layoutY="520.0" prefHeight="30.0" prefWidth="100.0" promptText="13.500,00" />
                         <Label fx:id="labelValorVenda" layoutX="20.0" layoutY="565.0" text="Valor de Venda:" textFill="WHITE">
                             <font>
                                 <Font size="14.0" />
@@ -71,20 +69,20 @@
                     </children></AnchorPane>
 
 
-                <Button fx:id="insertButton" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Inserir" textFill="WHITE" />
-                <Button fx:id="updateButton" layoutX="420.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Atualizar" textFill="WHITE" />
-                <Button fx:id="deleteButton" layoutX="560.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Excluir" textFill="WHITE" />
+                <Button fx:id="insertButton" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Inserir" textFill="WHITE" />
+                <Button fx:id="updateButton" layoutX="420.0" layoutY="550.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Atualizar" textFill="WHITE" />
+                <Button fx:id="deleteButton" layoutX="560.0" layoutY="550.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #2969c0;" text="Excluir" textFill="WHITE" />
             <TableView fx:id="TableView" layoutX="250.0" layoutY="6.0" prefHeight="533.0" prefWidth="547.0">
               <columns>
-                <TableColumn fx:id="codigoColumn"  prefWidth="75.0" text="Código"/>
-                  <TableColumn fx:id="renavamColumn" prefWidth="75.0" text="Renavam"/>
-                  <TableColumn fx:id="chassiColumn" prefWidth="75.0" text="Chassi"/>
-                  <TableColumn fx:id="modeloColumn" prefWidth="75.0" text="Modelo"/>
-                  <TableColumn fx:id="placaColumn" prefWidth="75.0" text="Placa"/>
-                  <TableColumn fx:id="corColumn" prefWidth="75.0" text="Cor"/>
-                  <TableColumn fx:id="anoColumn" prefWidth="75.0" text="Ano"/>
-                  <TableColumn fx:id="valorVendaColumn" prefWidth="75.0" text="Valor de Venda"/>
-                  <TableColumn fx:id="valorCompraColumn" prefWidth="75.0" text="Valor de Compra"/>
+                <TableColumn fx:id="codigoColumn" prefWidth="75.0" text="Código" />
+                  <TableColumn fx:id="renavamColumn" prefWidth="75.0" text="Renavam" />
+                  <TableColumn fx:id="chassiColumn" prefWidth="75.0" text="Chassi" />
+                  <TableColumn fx:id="modeloColumn" prefWidth="75.0" text="Modelo" />
+                  <TableColumn fx:id="placaColumn" prefWidth="75.0" text="Placa" />
+                  <TableColumn fx:id="corColumn" prefWidth="75.0" text="Cor" />
+                  <TableColumn fx:id="anoColumn" prefWidth="75.0" text="Ano" />
+                  <TableColumn fx:id="valorVendaColumn" prefWidth="75.0" text="Valor de Venda" />
+                  <TableColumn fx:id="valorCompraColumn" prefWidth="75.0" text="Valor de Compra" />
               </columns>
             </TableView>
 

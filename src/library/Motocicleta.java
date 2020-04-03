@@ -3,7 +3,7 @@ package library;
 public class Motocicleta {
     private long idMotocicleta,anoMotocicleta;
     private String modeloMotocicleta,renavamMotocicleta,chassiMotocicleta,placaMotocicleta,corMotocicleta;
-    private double valorCompra;
+    private double valorCompra,valorVenda;
 
     public Motocicleta(){}
 
@@ -16,6 +16,7 @@ public class Motocicleta {
         this.corMotocicleta = corMotocicleta;
         this.anoMotocicleta = anoMotocicleta;
         this.valorCompra = valorCompra;
+        this.valorVenda = valorVenda;
     }
     public long getIdMotocicleta() {
         return idMotocicleta;
@@ -81,6 +82,9 @@ public class Motocicleta {
         this.valorCompra = valorCompra;
     }
 
+    public double getValorVenda() { return valorVenda; }
+    public void setValorVenda(double valorVenda) { this.valorVenda = valorVenda; }
+
     @Override
     public String toString() {
         return "Motocicleta{" +
@@ -91,8 +95,9 @@ public class Motocicleta {
                 ", chassiMotocicleta='" + chassiMotocicleta + '\'' +
                 ", placaMotocicleta='" + placaMotocicleta + '\'' +
                 ", corMotocicleta='" + corMotocicleta + '\'' +
-                ", valorCompra=" + valorCompra +
-                '}';
+                ", valorCompra=" + valorCompra + '\'' +
+                ", valorVenda=" + valorVenda
+        '}';
 
 }
 }
