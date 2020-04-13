@@ -130,7 +130,7 @@ public class Controller implements Initializable {
     public Connection getConnection() {
         Connection conn;
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql:tableMotocicleta","postgres","230211");
+            conn = DriverManager.getConnection("jdbc:postgresql:dataBaseMotocicletas","postgres","******");
             return conn;
         }
         catch (Exception e){
