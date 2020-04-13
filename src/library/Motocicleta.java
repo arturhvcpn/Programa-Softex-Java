@@ -1,28 +1,21 @@
 package library;
 
 public class Motocicleta {
-    private long idMotocicleta,anoMotocicleta;
-    private String modeloMotocicleta,renavamMotocicleta,chassiMotocicleta,placaMotocicleta,corMotocicleta;
-    private double valorCompra,valorVenda;
+    private Integer idMotocicleta;
+    private String modeloMotocicleta;
+    private String renavamMotocicleta;
+    private String chassiMotocicleta;
+    private String placaMotocicleta;
+    private String corMotocicleta;
+    private Integer anoMotocicleta;
+    private BigDecimal valorCompra;
+    private BigDecimal valorVenda;
 
-    public Motocicleta(){}
-
-    public Motocicleta(long idMotocicleta, String modeloMotocicleta, String renavamMotocicleta, String chassiMotocicleta, String placaMotocicleta, String corMotocicleta, long anoMotocicleta, double valorCompra) {
-        this.idMotocicleta = idMotocicleta;
-        this.modeloMotocicleta = modeloMotocicleta;
-        this.renavamMotocicleta = renavamMotocicleta;
-        this.chassiMotocicleta = chassiMotocicleta;
-        this.placaMotocicleta = placaMotocicleta;
-        this.corMotocicleta = corMotocicleta;
-        this.anoMotocicleta = anoMotocicleta;
-        this.valorCompra = valorCompra;
-        this.valorVenda = valorVenda;
-    }
-    public long getIdMotocicleta() {
+    public Integer getIdMotocicleta() {
         return idMotocicleta;
     }
 
-    public void setIdMotocicleta(long idMotocicleta) {
+    public void setIdMotocicleta(Integer idMotocicleta) {
         this.idMotocicleta = idMotocicleta;
     }
 
@@ -66,38 +59,33 @@ public class Motocicleta {
         this.corMotocicleta = corMotocicleta;
     }
 
-    public long getAnoMotocicleta() {
+    public Integer getAnoMotocicleta() {
         return anoMotocicleta;
     }
 
-    public void setAnoMotocicleta(long anoMotocicleta) {
+    public void setAnoMotocicleta(Integer anoMotocicleta) {
         this.anoMotocicleta = anoMotocicleta;
     }
 
-    public double getValorCompra() {
+    public BigDecimal getValorCompra() {
         return valorCompra;
     }
 
-    public void setValorCompra(double valorCompra) {
+    public void setValorCompra(BigDecimal valorCompra) {
         this.valorCompra = valorCompra;
     }
 
-    public double getValorVenda() { return valorVenda; }
-    public void setValorVenda(double valorVenda) { this.valorVenda = valorVenda; }
+    public BigDecimal getValorVenda() {
+        return valorVenda;
+    }
 
-    @Override
-    public String toString() {
-        return "Motocicleta{" +
-                "idMotocicleta=" + idMotocicleta +
-                ", anoMotocicleta=" + anoMotocicleta +
-                ", modeloMotocicleta='" + modeloMotocicleta + '\'' +
-                ", renavamMotocicleta='" + renavamMotocicleta + '\'' +
-                ", chassiMotocicleta='" + chassiMotocicleta + '\'' +
-                ", placaMotocicleta='" + placaMotocicleta + '\'' +
-                ", corMotocicleta='" + corMotocicleta + '\'' +
-                ", valorCompra=" + valorCompra + '\'' +
-                ", valorVenda=" + valorVenda
-        '}';
+    public void setValorVenda(BigDecimal valorVenda) {
+        this.valorVenda = valorVenda;
+    }
 
-}
+
+
+    public Motocicleta(){}
+
+
 }

@@ -49,7 +49,7 @@ public class Controller implements Initializable {
     private TableView<Motocicleta> TableView;
 
     @FXML
-    private TableColumn<Motocicleta, long> codigoColumn;
+    private TableColumn<Motocicleta, Integer> codigoColumn;
 
     @FXML
     private TableColumn<Motocicleta, String> renavamColumn;
@@ -67,13 +67,13 @@ public class Controller implements Initializable {
     private TableColumn<Motocicleta, String> corColumn;
 
     @FXML
-    private TableColumn<Motocicleta, long> anoColumn;
+    private TableColumn<Motocicleta, Integer> anoColumn;
 
     @FXML
-    private TableColumn<Motocicleta, double> valorVendaColumn;
+    private TableColumn<Motocicleta, BigDecimal> valorVendaColumn;
 
     @FXML
-    private TableColumn<Motocicleta, double> valorCompraColumn;
+    private TableColumn<Motocicleta, BigDecimal> valorCompraColumn;
 
     @FXML
     private void insertButton() {
@@ -113,7 +113,7 @@ public class Controller implements Initializable {
     public Connection getConnection() {
         Connection conn;
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/tableMotocicleta","postgres","admin");
+            conn = DriverManager.getConnection("jdbc:postgresql:tableMotocicleta","postgres","230211");
             return conn;
         }
         catch (Exception e){
@@ -143,7 +143,6 @@ public class Controller implements Initializable {
         return motocicletaList;
     }
 
-    // I had to change ArrayList to ObservableList I didn't find another option to do this but this works :)
     public void showMotocicletas() {
         ObservableList<Motocicleta> list = getMotocicletaList();
 
