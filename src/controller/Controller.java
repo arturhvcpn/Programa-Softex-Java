@@ -163,15 +163,15 @@ public class Controller implements Initializable {
     public void showMotocicletas() {
         ObservableList<Motocicleta> list = getMotocicletaList();
 
-        codigoColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,Integer>("idMotocicleta"));
-        renavamColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("renavamMotocicleta"));
-        chassiColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("chassiMotocicleta"));
-        modeloColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("modeloMotocicleta"));
-        placaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("placaMotocicleta"));
-        corColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("corMotocicleta"));
-        anoColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,Integer>("anoMotocicleta"));
-        valorCompraColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,BigDecimal>("valorCompra"));
-        valorVendaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,BigDecimal>("valorVenda"));
+        codigoColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, Integer>("idMotocicleta"));
+        renavamColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, String>("renavamMotocicleta"));
+        chassiColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, String>("chassiMotocicleta"));
+        modeloColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, String>("modeloMotocicleta"));
+        placaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, String>("placaMotocicleta"));
+        corColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, String>("corMotocicleta"));
+        anoColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, Integer>("anoMotocicleta"));
+        valorCompraColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, BigDecimal>("valorCompra"));
+        valorVendaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta, BigDecimal>("valorVenda"));
 
         TableView.setItems(list);
     }
