@@ -170,8 +170,8 @@ public class Controller implements Initializable {
         placaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("placaMotocicleta"));
         corColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,String>("corMotocicleta"));
         anoColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,Integer>("anoMotocicleta"));
-        valorCompraColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,Integer>("valorCompra"));
-        valorVendaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,Integer>("valorVenda"));
+        valorCompraColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,BigDecimal>("valorCompra"));
+        valorVendaColumn.setCellValueFactory(new PropertyValueFactory<Motocicleta,BigDecimal>("valorVenda"));
 
         TableView.setItems(list);
     }
